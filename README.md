@@ -8,7 +8,7 @@ To reproduce this environment and run the analyses locally, follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/Afomiat/climate-challenge-week0.git
    cd climate-challenge-week0
    ```
 
