@@ -26,6 +26,12 @@ Our implementation successfully processed raw NASA POWER climate datasets throug
    - Engineered a custom Python automation script to use Ethiopia's notebook as a master template.
    - Dynamically generated identical, executed EDA notebooks for Kenya, Sudan, Tanzania, and Nigeria with stripped Python comments and precise, dynamically-calculated markdown statistics.
 
+5. **Cross-Country Comparison & Vulnerability Ranking (Task 3)**:
+   - **Synthesis**: Integrated cleaned datasets from all five nations into a unified analysis framework.
+   - **Statistical Testing**: Conducted One-Way ANOVA and Kruskal-Wallis tests to mathematically prove significant climate divergence across regions (p << 0.05).
+   - **Extreme Event Profiling**: Quantified annual frequencies of extreme heat (>35°C) and consecutive dry days to identify "climate hotspots."
+   - **Vulnerability Index**: Developed a weighted composite ranking system based on heat stress, rainfall instability, and drought exposure to inform COP32 policy recommendations.
+
 ## 📂 Repository Structure
 
 ```
