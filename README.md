@@ -32,6 +32,12 @@ Our implementation successfully processed raw NASA POWER climate datasets throug
    - **Extreme Event Profiling**: Quantified annual frequencies of extreme heat (>35°C) and consecutive dry days to identify "climate hotspots."
    - **Vulnerability Index**: Developed a weighted composite ranking system based on heat stress, rainfall instability, and drought exposure to inform COP32 policy recommendations.
 
+6. **Bonus: Interactive Climate Dashboard**:
+   - **Interactive Visualization**: Built a premium Streamlit application with zoomable Plotly charts.
+   - **Dynamic Controls**: Implemented multi-country selection, year range sliders, and variable toggles.
+   - **Intelligence Metrics**: Added real-time risk scoring and a data export center for policy briefs.
+   - **Cloud Fallback**: Engineered a sample data pipeline to ensure the app functions on public cloud platforms.
+
 ## 📂 Repository Structure
 
 ```
