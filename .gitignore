@@ -1,6 +1,39 @@
+# Virtual Environment
 venv/
-data/
-*.csv
+.venv/
+env/
+
+# Data files (never commit raw/clean CSVs — too large for Git)
+data/*.csv
+data/raw/
+data/processed/
+
+# Notebook artifacts
 .ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Python cache
 __pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment variables
 .env
+.env.local
+
+# IDE settings
+.vscode/settings.json
+.idea/
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# Distribution / Packaging
+dist/
+build/
+*.egg-info/

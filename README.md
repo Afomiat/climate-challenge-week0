@@ -43,6 +43,33 @@ Our implementation successfully processed raw NASA POWER climate datasets throug
 └── README.md            # Project documentation
 ```
 
+## 📁 Folder Guide
+
+| Folder / File | Purpose |
+|---|---|
+| `.github/workflows/` | CI/CD pipeline — auto-installs dependencies and verifies imports on every push to any branch |
+| `data/` | Raw NASA POWER CSVs and cleaned outputs — **excluded from Git** (see `.gitignore`) |
+| `notebooks/` | Per-country Jupyter EDA notebooks + `compare_countries.ipynb` for cross-country analysis |
+| `scripts/` | Shared Python helper module (`eda_utils.py`) used across all country notebooks |
+| `tests/` | Unit tests for utility functions to ensure data pipeline correctness |
+| `app/` | Streamlit interactive dashboard (Bonus Task) |
+| `requirements.txt` | Pinned project dependencies — used by CI and local setup |
+| `report.md` | Full project summary report covering methodology, KPIs, and COP32 findings |
+| `.gitignore` | Excludes `data/`, `venv/`, `.ipynb_checkpoints/`, and other artifacts from version control |
+
+## 🌿 Branch Strategy
+
+| Branch | Purpose |
+|---|---|
+| `setup-task` | Base environment setup — `.gitignore`, `requirements.txt`, CI workflow |
+| `eda-ethiopia` | Ethiopia climate EDA (master documented template) |
+| `eda-kenya` | Kenya climate EDA |
+| `eda-sudan` | Sudan climate EDA |
+| `eda-tanzania` | Tanzania climate EDA |
+| `eda-nigeria` | Nigeria climate EDA |
+| `compare-countries` | Cross-country vulnerability ranking and COP32 analysis |
+| `dashboard-dev` | Streamlit interactive dashboard (Bonus Task) |
+
 ## 🛠️ Reproducing the Environment
 
 To reproduce this environment and run the analyses locally, follow these steps:
