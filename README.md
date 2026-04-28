@@ -33,10 +33,14 @@ Our implementation successfully processed raw NASA POWER climate datasets throug
    - **Vulnerability Index**: Developed a weighted composite ranking system based on heat stress, rainfall instability, and drought exposure to inform COP32 policy recommendations.
 
 6. **Bonus: Interactive Climate Dashboard**:
+   - **Live Link**: [🚀 Access the COP32 Intelligence Portal](https://climate-challenge-week0-ncygexxzr4gh25wp5dtedc.streamlit.app/)
    - **Interactive Visualization**: Built a premium Streamlit application with zoomable Plotly charts.
    - **Dynamic Controls**: Implemented multi-country selection, year range sliders, and variable toggles.
    - **Intelligence Metrics**: Added real-time risk scoring and a data export center for policy briefs.
    - **Cloud Fallback**: Engineered a sample data pipeline to ensure the app functions on public cloud platforms.
+
+   ![Dashboard Preview](data/images/task2_discovery.png)
+   *Figure: Preview of the Interactive Intelligence Portal featuring 3D atmospheric discovery.*
 
 ## 📂 Repository Structure
 
