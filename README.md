@@ -46,16 +46,25 @@ Our implementation successfully processed raw NASA POWER climate datasets throug
 
 ```
 ├── .github/workflows/   # Continuous Integration (CI) actions
-├── data/                # Raw and cleaned CSV files (Ignored by Git)
+├── app/                 # Streamlit dashboard application
+│   ├── sample_data/     # Lightweight data for cloud deployment
+│   ├── main.py          # Dashboard entry point
+│   └── utils.py         # Visualization and logic utilities
+├── data/                # Climate datasets (Ignored by Git)
+│   ├── raw/             # Original NASA POWER datasets
+│   ├── processed/       # Cleaned datasets for analysis
+│   └── images/          # Exported visualization plots
 ├── notebooks/           # Jupyter notebooks for EDA
-│   ├── ethiopia_eda.ipynb  # Master commented template
-│   ├── kenya_eda.ipynb     # Automated generation
-│   ├── nigeria_eda.ipynb   # Automated generation
-│   ├── sudan_eda.ipynb     # Automated generation
-│   └── tanzania_eda.ipynb  # Automated generation
+│   ├── ethiopia_eda.ipynb  
+│   ├── kenya_eda.ipynb     
+│   ├── nigeria_eda.ipynb   
+│   ├── sudan_eda.ipynb     
+│   ├── tanzania_eda.ipynb  
+│   └── compare_countries.ipynb # Cross-country synthesis
 ├── scripts/             # Python automation and utility scripts
+├── tests/               # Unit tests for data pipeline
 ├── requirements.txt     # Project dependencies
-├── report.md            # Comprehensive project summary report
+├── final_report.md      # Comprehensive project summary report
 └── README.md            # Project documentation
 ```
 
@@ -70,7 +79,7 @@ Our implementation successfully processed raw NASA POWER climate datasets throug
 | `tests/` | Unit tests for utility functions to ensure data pipeline correctness |
 | `app/` | Streamlit interactive dashboard (Bonus Task) |
 | `requirements.txt` | Pinned project dependencies — used by CI and local setup |
-| `report.md` | Full project summary report covering methodology, KPIs, and COP32 findings |
+| `final_report.md` | Full project summary report covering methodology, KPIs, and COP32 findings |
 | `.gitignore` | Excludes `data/`, `venv/`, `.ipynb_checkpoints/`, and other artifacts from version control |
 
 ## 🌿 Branch Strategy

@@ -20,7 +20,7 @@ def load_data(countries):
     dfs = []
     for country in countries:
         # 1. Try primary data folder
-        path = f'data/{country.lower()}_clean.csv'
+        path = f'data/processed/{country.lower()}_clean.csv'
         if not os.path.exists(path):
             # 2. Try sample data folder (for cloud deployment)
             path = f'app/sample_data/{country.lower()}_clean.csv'
