@@ -39,8 +39,9 @@ Our implementation successfully processed raw NASA POWER climate datasets throug
    - **Intelligence Metrics**: Added real-time risk scoring and a data export center for policy briefs.
    - **Cloud Fallback**: Engineered a sample data pipeline to ensure the app functions on public cloud platforms.
 
-   ![Dashboard Preview](data/images/task2_discovery.png)
-   *Figure: Preview of the Interactive Intelligence Portal featuring 3D atmospheric discovery.*
+   ![Dashboard Overview](data/images/dashboard1.png)
+   ![Regional Analytics](data/images/dashboard2.png)
+   *Figures: Previews of the Interactive Intelligence Portal featuring multi-nation trend analysis and regional risk indexing.*
 
 ## 📂 Repository Structure
 
