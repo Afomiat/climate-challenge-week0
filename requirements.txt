@@ -7,3 +7,5 @@ scipy
 jupyter
 ipykernel
 nbconvert
+streamlit
+plotly

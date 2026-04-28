@@ -32,20 +32,39 @@ Our implementation successfully processed raw NASA POWER climate datasets throug
    - **Extreme Event Profiling**: Quantified annual frequencies of extreme heat (>35°C) and consecutive dry days to identify "climate hotspots."
    - **Vulnerability Index**: Developed a weighted composite ranking system based on heat stress, rainfall instability, and drought exposure to inform COP32 policy recommendations.
 
+6. **Bonus: Interactive Climate Dashboard**:
+   - **Live Link**: [🚀 Access the COP32 Intelligence Portal](https://climate-challenge-week0-ncygexxzr4gh25wp5dtedc.streamlit.app/)
+   - **Interactive Visualization**: Built a premium Streamlit application with zoomable Plotly charts.
+   - **Dynamic Controls**: Implemented multi-country selection, year range sliders, and variable toggles.
+   - **Intelligence Metrics**: Added real-time risk scoring and a data export center for policy briefs.
+   - **Cloud Fallback**: Engineered a sample data pipeline to ensure the app functions on public cloud platforms.
+
+   ![Dashboard Preview](data/images/task2_discovery.png)
+   *Figure: Preview of the Interactive Intelligence Portal featuring 3D atmospheric discovery.*
+
 ## 📂 Repository Structure
 
 ```
 ├── .github/workflows/   # Continuous Integration (CI) actions
-├── data/                # Raw and cleaned CSV files (Ignored by Git)
+├── app/                 # Streamlit dashboard application
+│   ├── sample_data/     # Lightweight data for cloud deployment
+│   ├── main.py          # Dashboard entry point
+│   └── utils.py         # Visualization and logic utilities
+├── data/                # Climate datasets (Ignored by Git)
+│   ├── raw/             # Original NASA POWER datasets
+│   ├── processed/       # Cleaned datasets for analysis
+│   └── images/          # Exported visualization plots
 ├── notebooks/           # Jupyter notebooks for EDA
-│   ├── ethiopia_eda.ipynb  # Master commented template
-│   ├── kenya_eda.ipynb     # Automated generation
-│   ├── nigeria_eda.ipynb   # Automated generation
-│   ├── sudan_eda.ipynb     # Automated generation
-│   └── tanzania_eda.ipynb  # Automated generation
+│   ├── ethiopia_eda.ipynb  
+│   ├── kenya_eda.ipynb     
+│   ├── nigeria_eda.ipynb   
+│   ├── sudan_eda.ipynb     
+│   ├── tanzania_eda.ipynb  
+│   └── compare_countries.ipynb # Cross-country synthesis
 ├── scripts/             # Python automation and utility scripts
+├── tests/               # Unit tests for data pipeline
 ├── requirements.txt     # Project dependencies
-├── report.md            # Comprehensive project summary report
+├── final_report.md      # Comprehensive project summary report
 └── README.md            # Project documentation
 ```
 
@@ -60,7 +79,7 @@ Our implementation successfully processed raw NASA POWER climate datasets throug
 | `tests/` | Unit tests for utility functions to ensure data pipeline correctness |
 | `app/` | Streamlit interactive dashboard (Bonus Task) |
 | `requirements.txt` | Pinned project dependencies — used by CI and local setup |
-| `report.md` | Full project summary report covering methodology, KPIs, and COP32 findings |
+| `final_report.md` | Full project summary report covering methodology, KPIs, and COP32 findings |
 | `.gitignore` | Excludes `data/`, `venv/`, `.ipynb_checkpoints/`, and other artifacts from version control |
 
 ## 🌿 Branch Strategy
